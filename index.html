@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Михаил Домнин — портфолио продуктового маркетолога</title>
+<meta name="description" content="Четыре кейса продуктового маркетинга в инвестиционной компании: исследование аудитории, инсайт, позиционирование и решения по продукту и страницам.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Михаил Домнин — портфолио продуктового маркетолога">
+<meta property="og:description" content="Четыре кейса продуктового маркетинга в инвестиционной компании: исследование аудитории, инсайт, позиционирование и решения по продукту и страницам.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%2316344F%22/><text x=%2216%22 y=%2222%22 font-size=%2216%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Georgia%22>МД</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap" rel="stylesheet">
+<style>body{margin:0}
+.pf{--ink:#1D2329;--navy:#16344F;--navy-2:#2B5277;--muted:#5F6B76;--rule:#DCE2E8;--tint:#EEF2F6;--paper:#FFFFFF;
+  --serif:'Literata',Georgia,'Times New Roman',serif;--sans:'IBM Plex Sans',-apple-system,'Segoe UI',Arial,sans-serif;
+  color:var(--ink);background:var(--paper);font-family:var(--sans);font-size:17px;line-height:1.62;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.pf *,.pf *::before,.pf *::after{box-sizing:border-box}
+.pf a{color:var(--navy);text-decoration-thickness:1px;text-underline-offset:3px}
+.pf a:hover{color:var(--navy-2)}
+.pf a:focus-visible{outline:2px solid var(--navy);outline-offset:3px;border-radius:2px}
+.pf .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+
+/* ---------- index ---------- */
+.pf .hero{padding:96px 0 56px;border-bottom:1px solid var(--rule)}
+.pf .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(40px,6vw,64px);line-height:1.05;letter-spacing:-.015em;margin:0 0 14px;color:var(--navy)}
+.pf .hero .role{font-size:20px;color:var(--muted);margin:0 0 28px}
+.pf .hero .lede{max-width:34em;font-size:19px;line-height:1.6;margin:0}
+.pf .cases{list-style:none;margin:0;padding:0}
+.pf .case-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:48px;padding:44px 0;border-bottom:1px solid var(--rule)}
+.pf .case-row h2{font-family:var(--serif);font-weight:600;font-size:clamp(24px,2.6vw,31px);line-height:1.2;margin:0;letter-spacing:-.005em}
+.pf .case-row h2 a{color:var(--ink);text-decoration:none}
+.pf .case-row h2 a:hover{color:var(--navy)}
+.pf .case-row .sum{margin:0 0 14px;font-size:17.5px}
+.pf .case-row .status{margin:0 0 18px;font-size:15px;color:var(--muted)}
+.pf .read{font-weight:500;font-size:16px}
+.pf .contacts{padding:56px 0 96px;display:flex;flex-wrap:wrap;gap:12px 36px;font-size:16px;color:var(--muted)}
+.pf .contacts a{color:var(--ink)}
+
+/* ---------- case page ---------- */
+.pf .topbar{padding:28px 0;font-size:15px}
+.pf .topbar a{text-decoration:none;color:var(--muted)}
+.pf .topbar a:hover{color:var(--navy)}
+.pf .case-head{padding:36px 0 44px;border-bottom:1px solid var(--rule)}
+.pf .case-head h1{font-family:var(--serif);font-weight:600;font-size:clamp(32px,4.6vw,50px);line-height:1.1;letter-spacing:-.012em;margin:0 0 32px;max-width:17em;color:var(--navy)}
+.pf .meta{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:8px 28px;margin:0;font-size:15.5px;max-width:52em}
+.pf .meta dt{color:var(--muted)}
+.pf .meta dd{margin:0}
+.pf .layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:64px;padding:56px 0 40px}
+.pf .toc{position:sticky;top:28px;align-self:start;font-size:14.5px;line-height:1.4}
+.pf .toc p{margin:0 0 12px;color:var(--muted)}
+.pf .toc ol{list-style:none;margin:0;padding:0;border-left:1px solid var(--rule)}
+.pf .toc li a{display:block;padding:7px 0 7px 16px;margin-left:-1px;border-left:2px solid transparent;color:var(--muted);text-decoration:none}
+.pf .toc li a:hover{color:var(--ink)}
+.pf .toc li a.on{color:var(--navy);border-left-color:var(--navy);font-weight:500}
+.pf .body{max-width:44em}
+.pf .body h2{font-family:var(--serif);font-weight:600;font-size:27px;line-height:1.25;margin:64px 0 20px;color:var(--navy);scroll-margin-top:24px;letter-spacing:-.005em}
+.pf .body h2:first-of-type{margin-top:0}
+.pf .body h3{font-family:var(--serif);font-weight:600;font-size:20px;line-height:1.3;margin:40px 0 14px}
+.pf .body p{margin:0 0 18px}
+.pf .body ul,.pf .body ol{margin:0 0 20px;padding-left:22px}
+.pf .body li{margin:0 0 8px}
+.pf .body li::marker{color:var(--navy-2)}
+.pf .body strong{font-weight:600}
+.pf .body em{font-style:italic}
+.pf .body blockquote{margin:26px 0;padding:18px 24px;background:var(--tint);border-radius:6px;font-family:var(--serif);font-size:18px;line-height:1.55}
+.pf .body blockquote p:last-child{margin:0}
+.pf .body hr{display:none}
+.pf .tbl{overflow-x:auto;margin:24px 0 28px;border:1px solid var(--rule);border-radius:6px}
+.pf .body table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.5}
+.pf .body th{background:var(--tint);text-align:left;font-weight:600;padding:11px 16px;color:var(--navy);border-bottom:1px solid var(--rule)}
+.pf .body td{padding:11px 16px;border-bottom:1px solid var(--rule);vertical-align:top}
+.pf .body tr:last-child td{border-bottom:0}
+.pf .approaches{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule)}
+.pf .approaches h2{font-size:20px;margin:0 0 14px}
+.pf .approaches p{color:var(--muted);font-size:15.5px;line-height:1.7}
+.pf .more{border-top:1px solid var(--rule);padding:40px 0 88px}
+.pf .more p{margin:0 0 16px;color:var(--muted);font-size:15px}
+.pf .more ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px 32px}
+.pf .more a{font-family:var(--serif);font-size:19px;font-weight:600;text-decoration:none}
+.pf .more a:hover{text-decoration:underline}
+
+@media (max-width:900px){
+  .pf{font-size:16.5px}
+  .pf .case-row{grid-template-columns:1fr;gap:14px;padding:36px 0}
+  .pf .layout{grid-template-columns:1fr;gap:0;padding-top:28px}
+  .pf .toc{position:static;margin-bottom:40px;padding-bottom:28px;border-bottom:1px solid var(--rule)}
+  .pf .hero{padding:64px 0 44px}
+  .pf .meta{grid-template-columns:1fr;gap:2px}
+  .pf .meta dd{margin-bottom:10px}
+}
+@media (prefers-reduced-motion:no-preference){.pf{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+<div class="pf">
+
+<div class="wrap">
+  <header class="hero">
+    <h1>Михаил Домнин</h1>
+    <p class="role">Product Marketing Manager</p>
+    <p class="lede">Продуктовый маркетолог в инвестиционной компании: сложные финансовые продукты, сегменты HNWI и B2B. Здесь четыре кейса целиком — как шло исследование, откуда брались выводы и как они превращались в решения по продукту, сообщению и страницам.</p>
+  </header>
+  <ul class="cases">
+  <li class="case-row">
+    <h2><a href="b2b.html">Позиционирование B2B-направления в инвестиционной компании</a></h2>
+    <div>
+      <p class="sum">Корпоративный сегмент без позиционирования и входящего потока. Исследование на пяти источниках, инсайт, выбор продукта для рекламы, страница направления и рекламный лендинг.</p>
+      <a class="read" href="b2b.html">Читать кейс</a>
+    </div>
+  </li>
+  <li class="case-row">
+    <h2><a href="advisory.html">Позиционирование Advisory и портфельного подхода</a></h2>
+    <div>
+      <p class="sum">Продукт с платой за результат конкурировал с собственной линейкой компании. Диагностика, конкурентный анализ и вложенная система позиционирования на трёх уровнях.</p>
+      <a class="read" href="advisory.html">Читать кейс</a>
+    </div>
+  </li>
+  <li class="case-row">
+    <h2><a href="deposits.html">Стратегия привлечения средств с депозитного рынка</a></h2>
+    <div>
+      <p class="sum">Как привлечь вкладчиков в цикле снижения ставки. Макроанализ рынка, два слоя мотивации, нейро-карта решения, продуктовая пара и нелинейный путь клиента.</p>
+      <a class="read" href="deposits.html">Читать кейс</a>
+    </div>
+  </li>
+  <li class="case-row">
+    <h2><a href="iis3.html">Вывод ИИС-3 в коммуникацию</a></h2>
+    <div>
+      <p class="sum">Налоговый продукт, одинаковый у всех брокеров. Time-market fit, свободная позиция под состоятельный сегмент и лид-магнит на 35 страниц.</p>
+      <a class="read" href="iis3.html">Читать кейс</a>
+    </div>
+  </li>
+  </ul>
+  <footer class="contacts">
+    <a href="mailto:domninmichael@yandex.ru">domninmichael@yandex.ru</a>
+    <a href="https://t.me/domnin21">Telegram: @domnin21</a>
+  </footer>
+</div>
+</div>
+
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.pf .toc a'));
+  var heads=[].slice.call(document.querySelectorAll('.pf .body h2[id]'));
+  if(!links.length||!heads.length)return;
+  function update(){
+    var cur=heads[0];
+    for(var i=0;i<heads.length;i++){ if(heads[i].getBoundingClientRect().top<=140) cur=heads[i]; }
+    links.forEach(function(a){ a.classList.toggle('on', a.getAttribute('href')==='#'+cur.id); });
+  }
+  var ticking=false;
+  window.addEventListener('scroll',function(){ if(!ticking){ requestAnimationFrame(function(){update();ticking=false;}); ticking=true; } },{passive:true});
+  update();
+})();
+</script>
+
+</body>
+</html>

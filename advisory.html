@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Позиционирование Advisory и портфельного подхода — Михаил Домнин</title>
+<meta name="description" content="Продукт с платой за результат конкурировал с собственной линейкой компании. Диагностика, конкурентный анализ и вложенная система позиционирования на трёх уровнях.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Позиционирование Advisory и портфельного подхода — Михаил Домнин">
+<meta property="og:description" content="Продукт с платой за результат конкурировал с собственной линейкой компании. Диагностика, конкурентный анализ и вложенная система позиционирования на трёх уровнях.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%2316344F%22/><text x=%2216%22 y=%2222%22 font-size=%2216%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Georgia%22>МД</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap" rel="stylesheet">
+<style>body{margin:0}
+.pf{--ink:#1D2329;--navy:#16344F;--navy-2:#2B5277;--muted:#5F6B76;--rule:#DCE2E8;--tint:#EEF2F6;--paper:#FFFFFF;
+  --serif:'Literata',Georgia,'Times New Roman',serif;--sans:'IBM Plex Sans',-apple-system,'Segoe UI',Arial,sans-serif;
+  color:var(--ink);background:var(--paper);font-family:var(--sans);font-size:17px;line-height:1.62;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.pf *,.pf *::before,.pf *::after{box-sizing:border-box}
+.pf a{color:var(--navy);text-decoration-thickness:1px;text-underline-offset:3px}
+.pf a:hover{color:var(--navy-2)}
+.pf a:focus-visible{outline:2px solid var(--navy);outline-offset:3px;border-radius:2px}
+.pf .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+
+/* ---------- index ---------- */
+.pf .hero{padding:96px 0 56px;border-bottom:1px solid var(--rule)}
+.pf .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(40px,6vw,64px);line-height:1.05;letter-spacing:-.015em;margin:0 0 14px;color:var(--navy)}
+.pf .hero .role{font-size:20px;color:var(--muted);margin:0 0 28px}
+.pf .hero .lede{max-width:34em;font-size:19px;line-height:1.6;margin:0}
+.pf .cases{list-style:none;margin:0;padding:0}
+.pf .case-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:48px;padding:44px 0;border-bottom:1px solid var(--rule)}
+.pf .case-row h2{font-family:var(--serif);font-weight:600;font-size:clamp(24px,2.6vw,31px);line-height:1.2;margin:0;letter-spacing:-.005em}
+.pf .case-row h2 a{color:var(--ink);text-decoration:none}
+.pf .case-row h2 a:hover{color:var(--navy)}
+.pf .case-row .sum{margin:0 0 14px;font-size:17.5px}
+.pf .case-row .status{margin:0 0 18px;font-size:15px;color:var(--muted)}
+.pf .read{font-weight:500;font-size:16px}
+.pf .contacts{padding:56px 0 96px;display:flex;flex-wrap:wrap;gap:12px 36px;font-size:16px;color:var(--muted)}
+.pf .contacts a{color:var(--ink)}
+
+/* ---------- case page ---------- */
+.pf .topbar{padding:28px 0;font-size:15px}
+.pf .topbar a{text-decoration:none;color:var(--muted)}
+.pf .topbar a:hover{color:var(--navy)}
+.pf .case-head{padding:36px 0 44px;border-bottom:1px solid var(--rule)}
+.pf .case-head h1{font-family:var(--serif);font-weight:600;font-size:clamp(32px,4.6vw,50px);line-height:1.1;letter-spacing:-.012em;margin:0 0 32px;max-width:17em;color:var(--navy)}
+.pf .meta{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:8px 28px;margin:0;font-size:15.5px;max-width:52em}
+.pf .meta dt{color:var(--muted)}
+.pf .meta dd{margin:0}
+.pf .layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:64px;padding:56px 0 40px}
+.pf .toc{position:sticky;top:28px;align-self:start;font-size:14.5px;line-height:1.4}
+.pf .toc p{margin:0 0 12px;color:var(--muted)}
+.pf .toc ol{list-style:none;margin:0;padding:0;border-left:1px solid var(--rule)}
+.pf .toc li a{display:block;padding:7px 0 7px 16px;margin-left:-1px;border-left:2px solid transparent;color:var(--muted);text-decoration:none}
+.pf .toc li a:hover{color:var(--ink)}
+.pf .toc li a.on{color:var(--navy);border-left-color:var(--navy);font-weight:500}
+.pf .body{max-width:44em}
+.pf .body h2{font-family:var(--serif);font-weight:600;font-size:27px;line-height:1.25;margin:64px 0 20px;color:var(--navy);scroll-margin-top:24px;letter-spacing:-.005em}
+.pf .body h2:first-of-type{margin-top:0}
+.pf .body h3{font-family:var(--serif);font-weight:600;font-size:20px;line-height:1.3;margin:40px 0 14px}
+.pf .body p{margin:0 0 18px}
+.pf .body ul,.pf .body ol{margin:0 0 20px;padding-left:22px}
+.pf .body li{margin:0 0 8px}
+.pf .body li::marker{color:var(--navy-2)}
+.pf .body strong{font-weight:600}
+.pf .body em{font-style:italic}
+.pf .body blockquote{margin:26px 0;padding:18px 24px;background:var(--tint);border-radius:6px;font-family:var(--serif);font-size:18px;line-height:1.55}
+.pf .body blockquote p:last-child{margin:0}
+.pf .body hr{display:none}
+.pf .tbl{overflow-x:auto;margin:24px 0 28px;border:1px solid var(--rule);border-radius:6px}
+.pf .body table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.5}
+.pf .body th{background:var(--tint);text-align:left;font-weight:600;padding:11px 16px;color:var(--navy);border-bottom:1px solid var(--rule)}
+.pf .body td{padding:11px 16px;border-bottom:1px solid var(--rule);vertical-align:top}
+.pf .body tr:last-child td{border-bottom:0}
+.pf .approaches{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule)}
+.pf .approaches h2{font-size:20px;margin:0 0 14px}
+.pf .approaches p{color:var(--muted);font-size:15.5px;line-height:1.7}
+.pf .more{border-top:1px solid var(--rule);padding:40px 0 88px}
+.pf .more p{margin:0 0 16px;color:var(--muted);font-size:15px}
+.pf .more ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px 32px}
+.pf .more a{font-family:var(--serif);font-size:19px;font-weight:600;text-decoration:none}
+.pf .more a:hover{text-decoration:underline}
+
+@media (max-width:900px){
+  .pf{font-size:16.5px}
+  .pf .case-row{grid-template-columns:1fr;gap:14px;padding:36px 0}
+  .pf .layout{grid-template-columns:1fr;gap:0;padding-top:28px}
+  .pf .toc{position:static;margin-bottom:40px;padding-bottom:28px;border-bottom:1px solid var(--rule)}
+  .pf .hero{padding:64px 0 44px}
+  .pf .meta{grid-template-columns:1fr;gap:2px}
+  .pf .meta dd{margin-bottom:10px}
+}
+@media (prefers-reduced-motion:no-preference){.pf{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+<div class="pf">
+
+<div class="wrap">
+  <nav class="topbar"><a href="index.html">Все кейсы</a></nav>
+  <header class="case-head">
+    <h1>Позиционирование Advisory и портфельного подхода</h1>
+    <dl class="meta"><dt>Роль</dt><dd>Продуктовый маркетинг — диагностика, конкурентный анализ, архитектура позиционирования, инструменты внедрения</dd><dt>Контекст</dt><dd>Инвестиционная компания, сегмент состоятельных частных клиентов</dd></dl>
+  </header>
+  <div class="layout">
+    <aside class="toc" aria-label="Содержание кейса"><p>Содержание</p><ol><li><a href="#s1">Задача</a></li><li><a href="#s2">1. Диагностика: в чём была проблема на самом деле</a></li><li><a href="#s3">2. Конкурентный контекст</a></li><li><a href="#s4">3. Как выбиралось ядро сообщения</a></li><li><a href="#s5">4. Пять элементов: система, которой не было</a></li><li><a href="#s6">5. Архитектура: матрёшка, а не три продукта</a></li><li><a href="#s7">6. Решение об объёме сообщения</a></li><li><a href="#s8">7. Инструменты внедрения</a></li></ol></aside>
+    <article class="body"><hr />
+<h2 id="s1">Задача</h2>
+<p>Advisory — формат сотрудничества с платой за результат — был запущен продуктовой командой и продавался. Единого языка у него не было: материалы собирались из формулировок, которые задавали вопросы вместо ответов.</p>
+<p>Нужно было собрать позиционирование, пригодное одновременно для трёх сценариев: клиентские материалы, аргументация для финансовых консультантов, защита перед топ-менеджментом.</p>
+<hr />
+<h2 id="s2">1. Диагностика: в чём была проблема на самом деле</h2>
+<p>Работа началась с аудита продуктового досье, собранного со слов продакт-оунеров, и действующего клиентского тизера.</p>
+<p><strong>Ожидали: продукт описан слабо. Оказалось: он описан за счёт компании.</strong></p>
+<p>Каждое заявленное преимущество формата при проверке оказалось свойством всей компании:</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Заявлено как преимущество Advisory</th>
+<th>Что это на самом деле</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>«Работа на результат»</td>
+<td>декларация вместо механики. Немедленный вопрос клиента: а на остальных тарифах работа не на результат?</td>
+</tr>
+<tr>
+<td>«Индивидуальный подход»</td>
+<td>ДНК компании: персональный консультант есть у каждого клиента на любом тарифе</td>
+</tr>
+<tr>
+<td>«Прозрачность»</td>
+<td>стандарт компании и всего рынка — обратного не заявляет никто</td>
+</tr>
+<tr>
+<td>«Интересы совпадают»</td>
+<td>читается как «на других тарифах не совпадают». Это неправда</td>
+</tr>
+<tr>
+<td>«Сопровождение портфеля»</td>
+<td>работа вдолгую — принцип компании, клиенты остаются с ней на любых тарифах</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Что из этого следовало практически.</strong> Клиент на базовом тарифе, читая эти материалы, делал единственно возможный вывод: значит, у меня работают хуже. Продукт не дополнял линейку, а отбирал у неё доверие — и бил не только по компании, но и по продавцам базовых тарифов.</p>
+<p>Сильные формулировки в тизере тоже были — например, точное описание механики вознаграждения. Но они появлялись случайно: системы, по которой их можно воспроизвести, не существовало.</p>
+<p><strong>Переопределение задачи.</strong> Раз спорные тезисы описывали компанию целиком, вопрос оказался шире одного продукта. Вместо позиционирования одного формата я разложил задачу на три уровня — компания, портфельный подход как метод, Advisory как формат — и дальше работал с каждым отдельно.</p>
+<hr />
+<h2 id="s3">2. Конкурентный контекст</h2>
+<p>Разобрал позиционирование шести игроков российского и международного рынка по единой рамке: кому адресовано, что обещают, чем доказывают, какую территорию занимают.</p>
+<p><strong>Ожидали найти свободные темы. Оказалось: все говорят одними и теми же словами.</strong></p>
+<p>Три «УТП» встречаются у шести игроков из шести:</p>
+<ul>
+<li><strong>индивидуальный подход</strong> — заявляют все, от российских премиальных брендов до глобальных private banks;</li>
+<li><strong>команда и экспертиза</strong> — управляющие, аналитики, «эксперты соберут аналитику за вас»;</li>
+<li><strong>поддержка в любое время</strong> — «будем доступны в период волатильности», «на связи 24/7».</li>
+</ul>
+<p>Когда преимущество есть у каждого, это не преимущество, а входной билет в категорию: клиент читает одно и то же на шестом сайте подряд.</p>
+<p>Практический вывод: дифференцироваться на этих темах невозможно. В нашей системе они ушли на уровень компании как ДНК, подтверждённая доказательствами, — а не как УТП формата.</p>
+<p><strong>Свободная территория — модель оплаты.</strong> Вознаграждение за результат в коммуникации акцентируют только два международных игрока; один из них прямо строит сообщение на том, что комиссия зависит от уровня активов, а не от количества транзакций. Ни один российский конкурент эту позицию не занял — все строят позиционирование на тех же трёх общих темах.</p>
+<hr />
+<h2 id="s4">3. Как выбиралось ядро сообщения</h2>
+<p>Ядро я выбирал не по внутренней логике и не по тому, что звучит убедительнее, а по совпадению двух независимых проверок.</p>
+<p><strong>Изнутри:</strong> это единственная механика, которой нет на других тарифах. Экспертиза, персональный консультант, сопровождение — есть везде. Плата за результат выше исторического максимума портфеля — только здесь.</p>
+<p><strong>Снаружи:</strong> это единственная незанятая позиция на российском рынке.</p>
+<p>Совпадение внутренней уникальности и внешней незанятости и стало основанием выбора. Если бы совпадения не было — механика уникальна, но территория занята, — пришлось бы либо искать другое ядро, либо строить отстройку внутри занятой территории, что заведомо дороже.</p>
+<hr />
+<h2 id="s5">4. Пять элементов: система, которой не было</h2>
+<p>Каждый уровень прорабатывался по одной схеме.</p>
+<p><strong>1. Positioning statement</strong> — внутренний документ, клиенту не показывается.</p>
+<blockquote>
+<p>Для [кого] — [продукт] — это [что], которое [выгода]. В отличие от [альтернатив] — [чем отличается].</p>
+</blockquote>
+<p>Главная часть — «в отличие от». Без неё получается описание продукта, а не позиционирование.</p>
+<p><strong>2. Core message</strong> — одно предложение, которое клиент запомнит, забыв всё остальное. Именно одно: человек не запоминает четыре вещи, он запоминает одну или ноль. Выводится из statement как его сжатие до произносимой фразы.</p>
+<p><strong>3. Опоры</strong> — core message сам по себе голословен. Опоры доказывают одну мысль под разными углами, не пересекаясь между собой. Критерий отбора: если опору можно убрать и core message не пострадает — она лишняя.</p>
+<p><strong>4. Proof point</strong> под каждой опорой — факт, цифра или механика. Опора без доказательства — обещание. Сильнейший proof — поведение клиентов: за него голосуют деньгами.</p>
+<p><strong>5. «Против чего»</strong> — у каждого аргумента должен быть противник, иначе он ничего не отличает. Тест: может ли конкурент заявить обратное? Если нет — это гигиена рынка, а не позиция. По этому фильтру из преимуществ ушла прозрачность.</p>
+<hr />
+<h2 id="s6">5. Архитектура: матрёшка, а не три продукта</h2>
+<p>Первый напрашивающийся вариант — один текст на всё — не работает: получается либо лозунг, который не продаёт формат, либо прайс-лист, который не объясняет компанию.</p>
+<p>Второй вариант — три независимых позиционирования — не лучше: уровни начинают конкурировать за внимание, а клиент получает три сообщения там, где готов удержать одно.</p>
+<p>Рабочая конструкция оказалась другой. Компания, метод и формат — это уровни вложенности одного способа работы, и клиент задаёт три вопроса <strong>в строгом порядке</strong>:</p>
+<p><strong>A · Компания — «Как вы будете ко мне относиться?»</strong>
+Core message: <em>сначала — вы, потом — инструменты.</em>
+Опоры: начинаем с целей, а не с продукта; у каждого клиента свой консультант; сопровождение вместо разовых идей.
+Доказательства: обратная связь клиентов, где большинство комментариев про персонального менеджера; средний срок отношений; доля клиентов, пришедших по рекомендации.</p>
+<p><strong>B · Портфельный подход — «Как вы работаете с моими деньгами?»</strong>
+Core message: <em>результат делает не бумага, результат делает портфель.</em>
+Опоры: структура вместо ставок — каждый актив выполняет функцию, доход, защита или ликвидность; риск виден до сделки — модель доходности и стресс-сценариев строится до вложения денег; дисциплина вместо эмоций — правила действий при падении заданы заранее.</p>
+<p><strong>C · Advisory — «В чём ваш интерес?»</strong>
+Core message: <em>мы зарабатываем, когда растёте вы.</em>
+Опоры: вознаграждение только за новый результат — плата берётся с прибыли выше исторического максимума портфеля, то есть просели и восстановились — за восстановление не платите; сниженные брокерские комиссии, которые позволяют регулярно ребалансировать портфель без заметных расходов на сделки.
+Доказательства: механика расчёта одной схемой; доля счетов, дофондированных за год, и рост активов сегмента — поведение вместо обещаний.</p>
+<p><strong>Ключевое решение.</strong> Портфельный подход зафиксирован как метод, общий для всех тарифов. Advisory подан не как другой продукт, а как более выгодная форма того же метода.</p>
+<p>Это снимает каннибализацию: клиент на базовом тарифе не читает материалы как обвинение, потому что метод у него тот же — отличаются условия оплаты. И превращает позиционирование в инструмент апсейла: переход становится не сменой продукта, а улучшением условий внутри знакомого подхода.</p>
+<p><strong>Три связки, сшивающие уровни:</strong></p>
+<ul>
+<li><strong>Связка денег (B→C).</strong> Метод предписывает регулярные ребалансировки — формат делает их доступными через сниженные комиссии. Условия спроектированы под метод, а не существуют отдельно.</li>
+<li><strong>Связка поддержки (A→C).</strong> Персональный консультант у каждого клиента → защита от эмоциональных решений в методе → инвестиционный советник как второе мнение в формате. Глубина поддержки растёт вместе со ставками.</li>
+<li><strong>Связка контроля (A·B·C).</strong> «Клиент решает» звучит фоном на каждом уровне и нигде не заявлено как УТП: это свойство всей компании, а не отдельного формата.</li>
+</ul>
+<hr />
+<h2 id="s7">6. Решение об объёме сообщения</h2>
+<p>У Advisory была вторая сильная особенность — подключение лицензированного инвестиционного советника. Соблазн включить её в опоры был прямой.</p>
+<p>Я вывел её из опор по трём основаниям.</p>
+<p><strong>Не доказывает core message.</strong> Ядро формата про деньги: мы зарабатываем, когда растёте вы. Советник — про экспертизу. Опора, которая не доказывает ядро, не усиливает конструкцию, а разрушает её: читатель перестаёт понимать, о чём предложение.</p>
+<p><strong>Не тянет на ядро сама.</strong> Строить позиционирование на советнике — значит потерять модель оплаты, единственный неповторимый механизм формата. Экспертиза есть у многих, плата за результат выше исторического максимума — только здесь.</p>
+<p><strong>Работает лучше отдельно.</strong> Советник оформлен как самостоятельное предложение внутри формата, со своим сообщением — <em>второе мнение там, где ставки высоки</em>, — и своим сценарием допродажи.</p>
+<p>Общий принцип: сильное свойство продукта, не доказывающее ядро, не выбрасывается — оно выносится на отдельный уровень коммуникации.</p>
+<hr />
+<h2 id="s8">7. Инструменты внедрения</h2>
+<p>Позиционирование, которое живёт только в презентации, перестаёт действовать на второй неделе.</p>
+<p><strong>Семь правил — фильтр для любого нового текста до публикации.</strong> Выведены не теоретически, а из реальных ошибок, пойманных в ходе работы:</p>
+<ol>
+<li>Против ситуаций и практик рынка — не против своих продуктов.</li>
+<li>Различие тарифов описывается механикой оплаты, а не моральной оценкой.</li>
+<li>Портфельный подход общий для всех тарифов.</li>
+<li>Сравнения — только в блоке «в отличие от» и только с внешним рынком.</li>
+<li>Опора без доказательства пересматривается, а не подпирается словами о себе.</li>
+<li>Core message может говорить «мы», если отвечает на вопрос клиента.</li>
+<li>УТП уровня — только то, чего нет на других уровнях и форматах.</li>
+</ol>
+<p><strong>Словарь перевода</strong> закрывает типовой разрыв, когда продукт, маркетинг и продажи описывают одно и то же тремя разными языками:</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Клиенту</th>
+<th>Внутри компании</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Advisory</td>
+<td>4-й тариф</td>
+</tr>
+<tr>
+<td>инвестиционный советник</td>
+<td>эдвайзер</td>
+</tr>
+<tr>
+<td>плата за результат</td>
+<td>success fee</td>
+</tr>
+<tr>
+<td>исторический максимум портфеля</td>
+<td>HWM</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Материал для защиты</strong> — презентация с драматургией «проблема → что показало досье → конкурентный контекст → методология → инсайт → решение по трём уровням → система правил». Задача формата — показать не результат, а последовательность, в которой он получен: любое частное решение защищается ссылкой на предыдущий шаг, а не на вкус.</p>
+<hr /><section class="approaches"><h2>Применённые подходы</h2><p>Аудит продуктовых материалов и досье · диагностика каннибализации в линейке · конкурентный анализ по единой рамке · проверка заявлений на ownability · positioning statement, core message, опоры, proof points · архитектура вложенного позиционирования · отбор доказательств по поведению клиентов · управление объёмом сообщения · sales enablement · свод редакционных правил и terminology guidelines</p></section></article>
+  </div>
+  <nav class="more" aria-label="Другие кейсы"><p>Другие кейсы</p><ul><li><a href="b2b.html">Юридические лица</a></li><li><a href="deposits.html">Переток с депозитов</a></li><li><a href="iis3.html">ИИС-3</a></li></ul></nav>
+</div>
+</div>
+
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.pf .toc a'));
+  var heads=[].slice.call(document.querySelectorAll('.pf .body h2[id]'));
+  if(!links.length||!heads.length)return;
+  function update(){
+    var cur=heads[0];
+    for(var i=0;i<heads.length;i++){ if(heads[i].getBoundingClientRect().top<=140) cur=heads[i]; }
+    links.forEach(function(a){ a.classList.toggle('on', a.getAttribute('href')==='#'+cur.id); });
+  }
+  var ticking=false;
+  window.addEventListener('scroll',function(){ if(!ticking){ requestAnimationFrame(function(){update();ticking=false;}); ticking=true; } },{passive:true});
+  update();
+})();
+</script>
+
+</body>
+</html>
